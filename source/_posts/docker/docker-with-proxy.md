@@ -1,5 +1,7 @@
 ---
 title: Gitlab runner for building docker image installation
+categories: docker
+tags: [docker,howto]
 ---
 
 ## 錯誤排除

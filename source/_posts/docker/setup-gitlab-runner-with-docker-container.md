@@ -1,5 +1,7 @@
 ---
 title: setup gitlab runner with docker container
+categories: docker
+tags: [docker,gitlab,devops]
 ---
 
 ## 目的

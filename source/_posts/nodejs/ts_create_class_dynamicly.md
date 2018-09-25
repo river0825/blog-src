@@ -1,5 +1,6 @@
 ---
 title: TypeScript - How To Create Object from import
+categories: nodejs
 tags: [nodejs,typescript,howto]
 ---
 

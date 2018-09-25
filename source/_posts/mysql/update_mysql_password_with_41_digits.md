@@ -1,5 +1,7 @@
 ---
 title: Mysql 無法登入
+categories: mysql
+tags: [mysql,howto]
 ---
 
 ## 問題
