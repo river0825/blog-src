@@ -20,7 +20,7 @@ jobs:
       - run: npm install bower; PATH=${PATH}":$(pwd)/node_modules/.bin/"
       - run: npm install hexo-cli
       - run: npm install
-      - run: hexo deploy
+      - run: ./node_modules/.bin/hexo deploy
 workflows:
   version: 2
   build_and_test:
