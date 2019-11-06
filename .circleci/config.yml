@@ -16,11 +16,26 @@ jobs:
       - image: circleci/node:chakracore-10.13
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+            
       - run: git submodule update
       - run: npm install bower; PATH=${PATH}":$(pwd)/node_modules/.bin/"
       - run: npm install hexo-cli
       - run: npm install
       - run: ./node_modules/.bin/hexo deploy
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - deploy:
+          command: |
+            git config --global user.email $GH_EMAIL
+            git config --global user.name $GH_NAME
+            npm run deploy
 workflows:
   version: 2
   build_and_test:
