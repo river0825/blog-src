@@ -13,7 +13,7 @@ checkout: &checkout
 jobs:
   build:
     docker:
-      - image: circleci/node:chakracore-10.13
+      - image: circleci/node:10.16.2
     steps:
       - checkout
       - restore_cache:
