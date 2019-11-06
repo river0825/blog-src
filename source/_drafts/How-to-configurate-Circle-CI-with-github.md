@@ -64,9 +64,13 @@ workflows:
       - test
 ```
 
-在 local 驗證設定檔的正確性
+Validate config in local, and execute it in local
 
 ```bash
 $ circleci config validate
 $ circleci local execute
 ```
+
+At last, add everything and push them to github.
+
+Go [Circle Ci](https://circleci.com/dashboard) for result.

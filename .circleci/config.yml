@@ -30,6 +30,9 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - add_ssh_keys: 
+          fingerprints:
+            - "35:e8:27:96:3b:a5:61:0d:ce:f3:94:0e:6c:a6:a0:56"
       - deploy:
           command: |
             npm run clean
