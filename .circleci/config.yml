@@ -35,9 +35,9 @@ jobs:
             - "35:e8:27:96:3b:a5:61:0d:ce:f3:94:0e:6c:a6:a0:56"
       - deploy:
           command: |
-            npm run clean
             git config --global user.email $GH_EMAIL
             git config --global user.name $GH_NAME
+            npm run clean
             npm run deploy
 workflows:
   version: 2
