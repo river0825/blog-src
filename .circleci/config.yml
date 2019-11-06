@@ -17,7 +17,8 @@ jobs:
     steps:
       - checkout
       - run: git submodule update
-      - run: npm install hexo-cli -g
+      - run: npm install bower; PATH=${PATH}":$(pwd)/node_modules/.bin/"
+      - run: npm install hexo-cli
       - run: npm install
       - run: hexo deploy
 workflows:

@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": { 
-    "generate": "hexo generate",
-    "deploy": "hexo deploy"
+    "generate": "./node_modules/.bin/hexo generate",
+    "deploy": "./node_modules/.bin/hexo deploy"
   },
   "hexo": {
     "version": "4.0.0"
