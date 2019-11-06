@@ -21,14 +21,13 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
-      - run: git submodule update
       - run: npm install bower; PATH=${PATH}":$(pwd)/node_modules/.bin/"
       - run: npm install hexo-cli
       - run: npm install
       - run: git config --global user.email $GH_EMAIL
       - run: git config --global user.name $GH_NAME
       - run: git clone https://github.com/theme-next/hexo-theme-next themes/next
+      - run: npm run clean; npm run deploy
       - save_cache:
           paths:
             - node_modules
@@ -37,10 +36,10 @@ jobs:
       # - add_ssh_keys: 
           # fingerprints:
             # - "3c:f2:69:47:ae:79:06:d2:28:4b:e0:16:0a:3b:71:d1"
-      - deploy:
-          command: |
-            npm run clean
-            npm run deploy
+      # - deploy:
+          # command: |
+            # npm run clean
+            # npm run deploy
 workflows:
   version: 2
   build_and_test:
