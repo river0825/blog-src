@@ -1,0 +1,28 @@
+version: 2
+localCheckout: &localCheckout
+  run: |-
+    PROJECT_PATH=$(cd ${CIRCLE_WORKING_DIRECTORY}; pwd)
+    mkdir -p ${PROJECT_PATH}
+    cd /tmp/_circleci_local_build_repo 
+    git ls-files -z | xargs -0 -s 2090860 tar -c | tar -x -C ${PROJECT_PATH} 
+    cp -a /tmp/_circleci_local_build_repo/.git ${PROJECT_PATH}
+
+checkout: &checkout
+  checkout
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:chakracore-10.13
+    steps:
+      - checkout
+      - run: git submodule update
+      - run: npm install hexo-cli -g
+      - run: npm install
+      - run: hexo deploy
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+#      - test 
