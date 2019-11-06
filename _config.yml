@@ -80,7 +80,7 @@ theme: mono
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/river0825/river0825.github.io
+  repo: ssh://github.com/river0825/river0825.github.io
   branch: master
 
   sitemap:
