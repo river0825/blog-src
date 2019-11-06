@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "generate": "./node_modules/.bin/hexo generate",
-    "deploy": "cp ./_config.next.yml ./themes/next/_config.yml;./node_modules/.bin/hexo deploy",
+    "deploy": "cp ./_config.next.yml ./themes/next/_config.yml; bash ./track-time.sh; ./node_modules/.bin/hexo deploy",
     "clean": "./node_modules/.bin/hexo clean"
   },
   "hexo": {
