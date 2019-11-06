@@ -31,7 +31,7 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-            - themes
+            # - themes
           key: v1-dependencies-{{ checksum "package.json" }}
       # - add_ssh_keys: 
           # fingerprints:
