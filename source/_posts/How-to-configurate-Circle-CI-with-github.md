@@ -1,7 +1,15 @@
 ---
 title: How to setup Circle CI in new Project with cli
-tags: [CI,cicle-ci,github,howto,clcieci-cli,cli]
+tags:
+  - CI
+  - cicle-ci
+  - github
+  - howto
+  - clcieci-cli
+  - cli
+date: 2019-11-06 20:51:02
 ---
+
 ## Prerequirement
 You have to have a cicleci account linked with github
 
