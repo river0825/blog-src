@@ -26,13 +26,13 @@ jobs:
       - run: npm install bower; PATH=${PATH}":$(pwd)/node_modules/.bin/"
       - run: npm install hexo-cli
       - run: npm install
-      - run: npm run clean; npm run deploy
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - deploy:
           command: |
+            npm run clean
             git config --global user.email $GH_EMAIL
             git config --global user.name $GH_NAME
             npm run deploy
