@@ -2,6 +2,7 @@
 title: Gitlab runner for building docker image installation
 categories: docker
 tags: [docker,howto]
+date: 2018-09-25 18:11:45
 ---
 
 ## 錯誤排除

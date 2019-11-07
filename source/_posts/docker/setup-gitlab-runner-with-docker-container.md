@@ -2,6 +2,7 @@
 title: setup gitlab runner with docker container
 categories: docker
 tags: [docker,gitlab,devops]
+date: 2018-09-25 18:11:45
 ---
 
 ## 目的

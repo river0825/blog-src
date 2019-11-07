@@ -2,6 +2,7 @@
 title: Mysql 無法登入
 categories: mysql
 tags: [mysql,howto]
+date: 2018-09-25 18:11:39
 ---
 
 ## 問題

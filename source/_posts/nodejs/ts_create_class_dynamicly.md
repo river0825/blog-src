@@ -2,6 +2,7 @@
 title: TypeScript - How To Create Object from import
 categories: nodejs
 tags: [nodejs,typescript,howto]
+date: 2018-09-25 18:11:39
 ---
 
 ## class loader
