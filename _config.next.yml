@@ -726,7 +726,7 @@ firestore:
   enable: true 
   collection: articles # Required, a string collection name to access firestore database
   apiKey: AIzaSyAkoTeRAHq1ynmGSi1HGFkyEGzVhXh-xmo # Required
-  projectId: 1:996531141309:web:ec5d6d79e33052d20395d4  # Required
+  projectId: tech-me-river  # Required
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
