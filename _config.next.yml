@@ -651,7 +651,7 @@ livere_uid: # <your_uid>
 gitalk:
   enable: true
   github_id: river0825 # GitHub repo owner
-  repo: https://github.com/river0825/blog-comments  # Repository name to store issues
+  repo: blog-comments  # Repository name to store issues
   client_id: 535795f9a9a3ef1b0508 # GitHub Application Client ID
   client_secret: ca7857aa80031f500c42f4a0dadf0a35ee6be70c # GitHub Application Client Secret
   admin_user: river0825  # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
