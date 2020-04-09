@@ -1,6 +1,6 @@
 ---
 title: Github workflow first try
-tags: [github, workflow, git tag, cicd]
+tags: [github, workflow, git tag, cicd, chrome extension]
 date: 2019-12-13 18:10:09
 ---
 
@@ -32,7 +32,6 @@ date: 2019-12-13 18:10:09
         files: |
           ./artifact/gitlab-extension.zip
           ./artifact/gitlab-extension.crx
-
 ```
 
 [完整設定在這](https://github.com/river0825/gitlab-extension-for-chrome/blob/master/.github/workflows/nodejs.yml)
