@@ -108,10 +108,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -136,7 +136,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -440,7 +440,7 @@ font:
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family: Amita
+    family: Microsoft JhengHei
     size:
 
   # Font settings for posts (.post-body).

@@ -5,10 +5,7 @@ categories: aws
 date: 2020-04-08 19:30:46
 ---
 
-
-
-
-## create billing alarm 
+## Create billing alarm 
 
 https://www.udemy.com/course/aws-certified-solutions-architect-associate/learn/lecture/13886250#overview
 
